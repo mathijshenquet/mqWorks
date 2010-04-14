@@ -11,19 +11,19 @@ mqWorks is a library written to introduce object orientated programming in the s
 	Array.somefunction();
 
 ### Syntax
-The mqWorks library adds only one function and a class to the global namespace both named µ. The µ function wraps native php variables and allows you to execute methods. The µ class uses the same function stack as the µ function. 
+The mqWorks library adds only one function and a class to the global namespace both named Âµ. The Âµ function wraps native php variables and allows you to execute methods. The Âµ class uses the same function stack as the Âµ function. 
 
 The following two lines are the same: 
 
 	<?php
-	µ('Hello world')->echoln(); // Hello World<br />
+	Âµ('Hello world')->echoln(); // Hello World<br />
 	
-	µ::echoln('Hello world'); // Hello World<br />
+	Âµ::echoln('Hello world'); // Hello World<br />
 	?>
 	
-> You can type the µ sign using `altgr + m` or µ `ctrl + alt + m` if you dont like this you can alias the function and class. To q for example:
+> You can type the Âµ sign using `altgr + m` or Âµ `ctrl + alt + m` if you dont like this you can alias the function and class. To q for example:
 > 
 >     function q(){
->         return µ(func_get_args());
+>         return Âµ(func_get_args());
 >     }
->     class q extends µ{}
+>     class q extends Âµ{}
