@@ -56,7 +56,7 @@ class Variable implements \ArrayAccess, \Iterator{
 		}
 		
 		if($value instanceof self){
-			return $value;
+			return clone $value;
 		}
 			
 		$this->value = $value;
