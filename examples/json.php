@@ -3,7 +3,9 @@ include '../src/bootstrap.php';
 
 µ('
 {
-	"first_name": "Mathijs",
-	"last_name": "Henquet"
+	"first name": "Mathijs",
+	"last name": "Henquet"
 }
-')->parseAs('json')->echoln();
+')->parseAs('json')->each(function($value, $key){
+	µ::format('My %s is %s', $key, $value)->echoln();
+});

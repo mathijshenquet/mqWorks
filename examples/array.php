@@ -8,5 +8,5 @@ $list->filter(function($value){
 })->echoln();
 
 $list->map(function($value){
-	return pow($value, $value);
+	return pow($value, 2);
 })->echoln();
